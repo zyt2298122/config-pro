@@ -1,0 +1,28 @@
+spring:
+  datasource:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://192.168.1.245:3306/jzad_bf?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
+      username: root
+      password: JZSOFT
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+
+server:
+    port: 8083
+logging:
+    config: classpath:logback-boot.xml
+
+#检验项目与报告单模板对照配置
+myConfigs:
+  xmKeyMap:
+    SH: 1
+    MY: 1
+    XCG: 2
+    ZP: 1
+    PCR: 2
+    QT: 1
+
+filePath: /usr/local/files/
+
